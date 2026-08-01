@@ -1,27 +1,24 @@
 // swift-tools-version: 6.4
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "ThemeTransitionKit",
+
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "ThemeTransitionKit",
             targets: ["ThemeTransitionKit"]
         ),
     ],
-    targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
-        .target(
-            name: "ThemeTransitionKit",
-            swiftSettings: [
-                .enableUpcomingFeature("ApproachableConcurrency"),
-            ],
-        ),
 
+    targets: [
+        .binaryTarget(
+            name: "ThemeTransitionKit",
+            url: "https://github.com/thakur-vijay/ThemeTransitionKit/releases/download/1.0.0/ThemeTransitionKit.xcframework.zip",
+            checksum: "5b70952f9c597d61944f3db9e007a088759c3e8c44b9a3a63c6b78286185528c"
+        )
     ],
+
     swiftLanguageModes: [.v6]
 )
