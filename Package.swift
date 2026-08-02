@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ThemeTransitionKit",
-            url: "https://github.com/thakur-vijay/ThemeTransitionKit/releases/download/1.0.9/ThemeTransitionKit.xcframework.zip",
-            checksum: "8b512a272072c413f657f3d993ee91d4fe8f3460d26f00725b10e13a71b9b2e6"
+            url: "https://github.com/thakur-vijay/ThemeTransitionKit/releases/download/1.1.0/ThemeTransitionKit.xcframework.zip",
+            checksum: "14d5941040ac5d4061720971f99a42cadb9c0ed379924d7ede3720fc320cd4de"
         )
     ],
 
